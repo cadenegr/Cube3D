@@ -1,4 +1,5 @@
-/* ************************************************************************** */
+/* *************************************************		if (line[j] != '1' && line[j] != ' ' && line[j] != '\n')
+			return (perror("Error!\nInvalid map format."), 1);*********************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   validate_map.c                                     :+:      :+:    :+:   */
@@ -24,7 +25,7 @@ int	inspect_left_right(char *line, int place, int height)
 		else if (line[place] == ' ')
 			place++;
 		else
-			return (perror("Error!\nInvaild map format."), 1);
+			return (perror("Error!\nInvalid map format."), 1);
 	}
 	place = ft_strlen(line);
 	while (place >= 0)
@@ -35,7 +36,7 @@ int	inspect_left_right(char *line, int place, int height)
 			|| line[place] == '\0')
 			place--;
 		else
-			return (perror("Error!\nInvaild map format."), 1);
+			return (perror("Error!\nInvalid map format."), 1);
 	}
 	return (0);
 }

@@ -1,0 +1,35 @@
+# Executable
+cub3D
+
+# Object files
+*.o
+obj/
+*.a
+
+# Library builds
+libft/obj/
+libft/libft.a
+minilibx-linux/obj/
+minilibx-linux/libmlx.a
+minilibx-linux/libmlx_Linux.a
+minilibx-linux/test/main.o
+minilibx-linux/test/mlx-test
+
+# Build artifacts
+*.dSYM/
+*.swp
+*.swo
+*~
+
+# IDEs
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

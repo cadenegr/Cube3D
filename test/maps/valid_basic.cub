@@ -1,0 +1,13 @@
+NO ./tex/eagle.xpm
+SO ./tex/greystone.xpm
+WE ./tex/purplestone.xpm
+EA ./tex/red.xpm
+
+F 100,0,0
+C 255,120,0
+
+1111111111
+1000000001
+1000N00001
+1000000001
+1111111111

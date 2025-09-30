@@ -6,7 +6,7 @@
 /*   By: cadenegr <neo_dgri@hotmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 16:31:56 by cadenegr          #+#    #+#             */
-/*   Updated: 2024/10/08 16:38:04 by cadenegr         ###   ########.fr       */
+/*   Updated: 2025/09/30 16:08:41 by cadenegr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,8 @@ int	parse_map(int ac, char *map, t_data *data)
 		return (perror("Error!\nMap should be a '.cub' file!"), 1);
 	if (before_map(map, data))
 		return (1);
-	trim_unnecesary_spaces(data);
+	if (trim_unnecesary_spaces(data))
+		return (1);
 	if (save_map(map, data))
 		return (1);
 	if (validate_map(data))
